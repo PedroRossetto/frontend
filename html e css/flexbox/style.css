@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-container {
+    background: rgb(189, 189, 89);
+    height: 500px;
+    display: flex;
+    /*Ao ativar display flex isso embaixo acontece*/
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    /* ----------------------------- */
+}
+
+.flex-item:nth-child(1) {
+    background: rgb(201, 45, 45);
+    flex-basis: 600px;
+}
+
+.flex-item:nth-child(2) {
+    background: rgb(201, 198, 45);
+}
+
+.flex-item:nth-child(3) {
+    background: rgb(45, 201, 66);
+}
+
+
+.flex-item:nth-child(4) {
+    background: rgb(45, 118, 201);
+}
+
+.flex-item:nth-child(5) {
+    background: rgb(165, 45, 201);
+}
