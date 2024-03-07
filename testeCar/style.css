@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(202, 202, 202);
+}
+
+.cenario {
+    margin-top: 15vh;
+    display: flex;
+    height: 70vh;
+    width: 100vw;
+    background-color: greenyellow;
+    margin-top: 7%;
+    left: 0px;
+}
+
+.carro {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    margin-top: 12%;
+    margin-left: 1%;
+    display: block;
+}
+
+.obstaculos {
+    width: 150px;
+    height: 50px;
+    background-color: red;
+}
+/* Obstaculos são gerados a uma certa width de distancia do carro, e conforme se passam os segundo seu width diminui, eles são gerador entre um parametro (min - max) de height */
