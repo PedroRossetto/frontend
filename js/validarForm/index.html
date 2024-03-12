@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validando formulário HTML</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="content">
+        <h2>Formulário de cadastro</h2>
+        <ul>
+            <li>Nenhum campo pode estar vazio</li>
+            <li>Usuário só poderá conter letras e/ou números</li>
+            <li>Usuário deverá ter entre 3 e 12 caracteres</li>
+            <li>Senha precisa ter entre 6 e 12 caracteres</li>
+        </ul>
+        <form action="" class="form" id="formulario">
+            <!-- nome sobrenome cpf usuario senha repetir senha -->
+            <div class="div-form">
+                <label for="nome">Nome </label>
+                <input type="text" id="nome" name="nome" class="validar"> 
+           
+                <label for="sobrenome">Sobrenome </label>
+                <input type="text" id="sobrenome" name="sobrenome" class="validar">
+                
+                <label for="cpf">Cpf </label>
+                <input type="text" id="cpf" name="cpf" class="validar cpf">
+               
+                <label for="usuario">Usuário </label>
+                <input type="text" id="usuario" name="usuario" class="validar usuario">
+
+                <label for="senha">Senha </label>
+                <input type="password" id="senha" name="senha" class="validar senha">
+
+                <label for="repetirSenha">Repetir senha </label>
+                <input type="password" id="repetirSenha" name="repetirSenha" class="validar repetirSenha">
+                
+                <button type="submit" id="enviar">Enviar</button>
+            </div>
+        </form>
+    </div>
+    <script defer src="validandoCpf.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
