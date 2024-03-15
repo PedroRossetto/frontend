@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Modelo</title>
+</head>
+
+<body>
+
+  <section class="container">
+    <h1>Gerador de senha</h1>
+    <h2>Selecione as opções : </h2>
+
+    <form id="form">
+
+      <label for="quantidade">Quantidade de caracteres</label>
+      <input type="number" name="quantidade" id="quantidade" class="check">
+
+      <label for="numeros">Números</label>
+      <input type="checkbox" name="numeros" id="numeros" class="check">
+
+      <label for="upper">Letras maisculas</label>
+      <input type="checkbox" name="upper" id="upper" class="check">
+
+      <label for="lower">Letras minusculas</label>
+      <input type="checkbox" name="lower" id="lower" class="check"> 
+
+      <label for="simbol">Simbolos</label>
+      <input type="checkbox" name="simbol" id="simbol" class="check">
+
+      <div id="resultadoSenha"></div>
+
+      <button class="enviarBtn" id="enviarBtn">Gerar senha</button>
+    </form>
+  
+  </section>
+
+  <script src="./assets/js/bundle.js"></script>
+</body>
+
+</html>
