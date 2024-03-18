@@ -118,13 +118,20 @@ form button:hover {
   height: 30px;
 }
 
+#resultadoSenha {
+  margin: 0 auto;
+  word-break: break-all;
+  text-align: center;
+}
+
+
 #quantidade::-webkit-outer-spin-button,
 #quantidade::-webkit-inner-spin-button{
   -webkit-appearance: none;
 }
 
 
-`, "",{"version":3,"sources":["webpack://./src/assets/css/style.css"],"names":[],"mappings":"AACA;EACE,kCAAkC;EAClC,sCAAsC;AACxC;;AAEA;EACE,sBAAsB;EACtB,UAAU;AACZ;;AAEA;EACE,SAAS;EACT,UAAU;EACV,gCAAgC;EAChC,oCAAoC;EACpC,gBAAgB;EAChB,kBAAkB;AACpB;;AAEA;EACE,kBAAkB;AACpB;;AAEA;EACE,eAAe;EACf,uBAAuB;AACzB;;AAEA;EACE,gBAAgB;EAChB,iBAAiB;EACjB,gBAAgB;EAChB,aAAa;EACb,mBAAmB;AACrB;;AAEA;EACE,qBAAqB;EACrB,WAAW;EACX,mBAAmB;AACrB;;;AAGA;EACE,uCAAuC;AACzC;;AAEA;EACE,YAAY;EACZ,gCAAgC;EAChC,WAAW;EACX,eAAe;EACf,gBAAgB;EAChB,YAAY;EACZ,eAAe;EACf,gBAAgB;AAClB;;AAEA;EACE,uCAAuC;AACzC;;AAEA;EACE,WAAW;EACX,YAAY;AACd;;AAEA;;EAEE,wBAAwB;AAC1B","sourcesContent":["@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');\n:root {\n  --primary-color: rgb(54, 158, 184);\n  --primary-color-darker: rgb(9, 48, 56);\n}\n\n* {\n  box-sizing: border-box;\n  outline: 0;\n}\n\nbody {\n  margin: 0;\n  padding: 0;\n  background: var(--primary-color);\n  font-family: 'Open sans', sans-serif;\n  font-size: 1.3em;\n  line-height: 1.5em;\n}\n\nh1, h2 {\n  text-align: center;\n}\n\nh2 {\n  font-size: 26px;\n  color: rgb(25, 104, 91);\n}\n\n.container {\n  max-width: 640px;\n  margin: 50px auto;\n  background: #fff;\n  padding: 20px;\n  border-radius: 10px;\n}\n\nform input, form label, form button {\n  display: inline-block;\n  width: 100%;\n  margin-bottom: 10px;\n}\n\n\nform input:focus {\n  outline: 1px solid var(--primary-color);\n}\n\nform button {\n  border: none;\n  background: var(--primary-color);\n  color: #fff;\n  font-size: 18px;\n  font-weight: 700;\n  height: 50px;\n  cursor: pointer;\n  margin-top: 30px;\n}\n\nform button:hover {\n  background: var(--primary-color-darker);\n}\n\n.check {\n  width: 30px;\n  height: 30px;\n}\n\n#quantidade::-webkit-outer-spin-button,\n#quantidade::-webkit-inner-spin-button{\n  -webkit-appearance: none;\n}\n\n\n"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./src/assets/css/style.css"],"names":[],"mappings":"AACA;EACE,kCAAkC;EAClC,sCAAsC;AACxC;;AAEA;EACE,sBAAsB;EACtB,UAAU;AACZ;;AAEA;EACE,SAAS;EACT,UAAU;EACV,gCAAgC;EAChC,oCAAoC;EACpC,gBAAgB;EAChB,kBAAkB;AACpB;;AAEA;EACE,kBAAkB;AACpB;;AAEA;EACE,eAAe;EACf,uBAAuB;AACzB;;AAEA;EACE,gBAAgB;EAChB,iBAAiB;EACjB,gBAAgB;EAChB,aAAa;EACb,mBAAmB;AACrB;;AAEA;EACE,qBAAqB;EACrB,WAAW;EACX,mBAAmB;AACrB;;;AAGA;EACE,uCAAuC;AACzC;;AAEA;EACE,YAAY;EACZ,gCAAgC;EAChC,WAAW;EACX,eAAe;EACf,gBAAgB;EAChB,YAAY;EACZ,eAAe;EACf,gBAAgB;AAClB;;AAEA;EACE,uCAAuC;AACzC;;AAEA;EACE,WAAW;EACX,YAAY;AACd;;AAEA;EACE,cAAc;EACd,qBAAqB;EACrB,kBAAkB;AACpB;;;AAGA;;EAEE,wBAAwB;AAC1B","sourcesContent":["@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');\n:root {\n  --primary-color: rgb(54, 158, 184);\n  --primary-color-darker: rgb(9, 48, 56);\n}\n\n* {\n  box-sizing: border-box;\n  outline: 0;\n}\n\nbody {\n  margin: 0;\n  padding: 0;\n  background: var(--primary-color);\n  font-family: 'Open sans', sans-serif;\n  font-size: 1.3em;\n  line-height: 1.5em;\n}\n\nh1, h2 {\n  text-align: center;\n}\n\nh2 {\n  font-size: 26px;\n  color: rgb(25, 104, 91);\n}\n\n.container {\n  max-width: 640px;\n  margin: 50px auto;\n  background: #fff;\n  padding: 20px;\n  border-radius: 10px;\n}\n\nform input, form label, form button {\n  display: inline-block;\n  width: 100%;\n  margin-bottom: 10px;\n}\n\n\nform input:focus {\n  outline: 1px solid var(--primary-color);\n}\n\nform button {\n  border: none;\n  background: var(--primary-color);\n  color: #fff;\n  font-size: 18px;\n  font-weight: 700;\n  height: 50px;\n  cursor: pointer;\n  margin-top: 30px;\n}\n\nform button:hover {\n  background: var(--primary-color-darker);\n}\n\n.check {\n  width: 30px;\n  height: 30px;\n}\n\n#resultadoSenha {\n  margin: 0 auto;\n  word-break: break-all;\n  text-align: center;\n}\n\n\n#quantidade::-webkit-outer-spin-button,\n#quantidade::-webkit-inner-spin-button{\n  -webkit-appearance: none;\n}\n\n\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -656,14 +663,27 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var btnEnviar = document.getElementById("form");
-var array = [];
+var quantidade1 = document.getElementById('quantidade');
+var numeros1 = document.getElementById('numeros');
+var upper1 = document.getElementById('upper');
+var lower1 = document.getElementById('lower');
+var simbol1 = document.getElementById('simbol');
+var resultado = document.getElementById('resultadoSenha');
+var senha = "";
+var caracteres;
+
+// Objeto com os tipos de caracteres e seus valores
+var tiposCaractere = {
+  numeros: '0123456789',
+  maisculo: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
+  minusculo: 'abcdefghijklmnopqrstuvwxyz',
+  simbolo: '!@#$%^&*()-_=+/?<>'
+};
+//Define as propriedades e seus valores e cria uma senha aleatoria com base nos parametros
 function criarSenha() {
+  senha = "";
+  caracteres = "";
   var senha1 = new _modules_Senha__WEBPACK_IMPORTED_MODULE_0__.Senha();
-  var quantidade1 = document.getElementById('quantidade');
-  var numeros1 = document.getElementById('numeros');
-  var upper1 = document.getElementById('upper');
-  var lower1 = document.getElementById('lower');
-  var simbol1 = document.getElementById('simbol');
   if (numeros1.checked === true) {
     senha1.numeros = true;
   }
@@ -676,19 +696,29 @@ function criarSenha() {
   if (simbol1.checked === true) {
     senha1.simbol = true;
   }
-  senha1.quantidade = quantidade1.value;
-  console.log(senha1);
-  for (var prop in senha1) {
-    if (senha1.hasOwnProperty(prop)) {
-      array.push(senha1[prop]);
-    }
+  if (senha1.lower === true) {
+    caracteres += tiposCaractere.minusculo;
   }
-  console.log(array);
-  return senha1;
+  if (senha1.numeros === true) {
+    caracteres += tiposCaractere.numeros;
+  }
+  if (senha1.upper === true) {
+    caracteres += tiposCaractere.maisculo;
+  }
+  if (senha1.simbol === true) {
+    caracteres += tiposCaractere.simbolo;
+  }
+  senha1.quantidade = quantidade1.value;
+  for (var i = 0; i < senha1.quantidade; i++) {
+    senha += caracteres[parseInt(Math.random() * (caracteres.length - 0) + 0)];
+  }
+  //Verifica se o argumento é valido
+  senha.includes('undefined') ? senha1.senha = 'Necessário no minimo 1 parametro' : senha1.senha = senha;
+  return resultado.innerText = senha1.senha;
 }
+//Pega o evento de submit faz a prevenção e chama a função de criar senha
 btnEnviar.addEventListener('submit', function (e) {
   e.preventDefault();
-  array = [];
   criarSenha();
 });
 })();

@@ -6,8 +6,5 @@ export class Senha {
     simbol = this.simbol;
     senha = this.senha;
 
-    
-
-  
 }
 
